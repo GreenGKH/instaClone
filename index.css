@@ -1,5 +1,32 @@
 html, body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    max-width: 750px;
+    box-sizing: border-box;
 }
 
+/* Navbar section */
+.logo {
+    width: 170px;
+    margin-left: 20px;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 50px;
+    margin: 0 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #c6c6c6;
+    padding: 20px 0;
+}
+
+/* Post */
+.user-profil {
+    display: flex;
+    align-items: center;
+}
