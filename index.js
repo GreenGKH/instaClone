@@ -36,8 +36,8 @@ for(let i = 0; i < posts.length; i++) {
         <section class="user-profil">
             <img src="${posts[i].avatar}" alt="user avatar" class="avatar">
             <div class="right">
-                <h1>${posts[i].name}"</h1>
-                <p>"${posts[i].location}"</p>
+                <h1>${posts[i].name}</h1>
+                <p>${posts[i].location}</p>
             </div>
         </section>
         <section class="post">
