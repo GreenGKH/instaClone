@@ -17,7 +17,7 @@ const posts = [
         comment: "i'm feelin a bit stressed tbh",
         likes: 4
     },
-        {
+    {
         name: "Joseph Ducreux",
         username: "jd1735",
         location: "Paris, France",
@@ -28,3 +28,28 @@ const posts = [
     }
 ]
 
+const mainEl = document.getElementById("main");
+
+for(let i = 0; i < posts.length; i++) {
+    mainEl.innerHTML += `
+        <!-- Post ${i} -->
+        <section class="user-profil">
+            <img src="${posts[i].avatar}" alt="user avatar" class="avatar">
+            <div class="right">
+                <h1>${posts[i].name}"</h1>
+                <p>"${posts[i].location}"</p>
+            </div>
+        </section>
+        <section class="post">
+            <img src="${posts[i].post}" alt="${posts[i].name} post" class="post">
+        </section>
+        <section class="interaction-section">
+            <div class="interaction">
+                <img src="images/icon-heart.png" alt="Like icon" class="icon">
+                <img src="images/icon-comment.png" alt="Comment icon" class="icon">
+                <img src="images/icon-dm.png" alt="Share icon" class="icon">
+            </div>
+            <p class="likes bold">${posts[i].likes} likes</p>
+            <p class="comment"> <span class="bold">${posts[i].username} </span>${posts[i].comment}</p>
+        </section>
+`}

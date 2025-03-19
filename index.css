@@ -1,5 +1,68 @@
 html, body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    max-width: 750px;
+    box-sizing: border-box;
 }
 
+/* Navbar section */
+.logo {
+    width: 170px;
+    margin-left: 20px;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 50px;
+    margin: 0 20px 0 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #c6c6c6;
+    padding: 20px 0;
+}
+
+/* User profil section */
+.user-profil {
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+p {
+    margin-top: 0;
+}
+
+/* Post section */
+
+.post {
+    width: 100%;
+}
+
+/* Interaction section*/
+.interaction-section {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon {
+    width: 45px;
+    margin-right: 20px;
+}
+
+.interaction-section p {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+/* general classes */
+.bold {
+    font-weight: bold;
+}
